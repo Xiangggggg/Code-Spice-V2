@@ -31,6 +31,9 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#review">Reviews</a>
                     </li>
                     <li class="nav-item">
@@ -97,6 +100,7 @@
             </div>
         </div>
     </section>
+
     <section class="section" id="about">
         <div class="container text-center">
             <h6 class="display-4 has-line">ABOUT THE INSTRUCTORS</h6>
@@ -119,33 +123,73 @@
             </div>
         </div>
     </section>
-    <!--
-    <section class="section" style="background-color: rgba(0, 0, 0, 0.05)">
-        <h3 class="header-title" style="text-align: center"><strong class="text-dark">About the Instructors</strong></h3>
-        <br>
-        <div class="container">
-            <div class="row justify-content-between">               
-                <div class="col-md-6 col-lg-5 align-self-center">
-                    <h6 class="title">Xiang Meng</h6>
-                    <img src="assets/imgs/xiang.jpg" alt="" class="shadow w-100">
-                    <p>Hello, I am Xiang, a rising junior at the Science and Engineering (S&E) Program at Manalapan High School and have also been studying in the Columbia University Science Honors Program (SHP). I am pretty experienced in the languages Python, HTML/CSS, C++, and currently learning Java. Oustside of school and programming, I like to play volleyball, do fencing, and play piano. When I'm feeling more productive, I enjoy doing competitive math and coding (currently USACO silver), working on projects, or honing my own coding skills. This is my <a href="https://github.com/Xiangggggg" target="_blank">Github</a> if you are curious about seeing some projects I've made in the past.</p>              
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-between align-self-center">               
-                <div class="col-md-6 col-lg-5">
-                    <h6 class="title">Xiang Meng</h6>
-                    <img src="assets/imgs/xiang.jpg" alt="" class="shadow w-100">
-                    <p>Hello, I am Xiang, a rising junior at the Science and Engineering (S&E) Program at Manalapan High School and have also been studying in the Columbia University Science Honors Program (SHP). I am pretty experienced in the languages Python, HTML/CSS, C++, and currently learning Java. Oustside of school and programming, I like to play volleyball, do fencing, and play piano. When I'm feeling more productive, I enjoy doing competitive math and coding (currently USACO silver), working on projects, or honing my own coding skills. This is my <a href="https://github.com/Xiangggggg" target="_blank">Github</a> if you are curious about seeing some projects I've made in the past.</p>              
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
     
+    <section class="section" id="courses">
+        <div class="container text-center">
+            <h6 class="display-4 has-line">COURSES OFFERED</h6>
+            <p class="mb-5 pb-4">Click on any of the below courses to see more details about what is taught in each course. All courses are free unless otherwise specified.</p>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'BP')">Beginner Python</button>
+                <button class="tablinks" onclick="openCity(event, 'AP')">Advanced Python</button>
+                <button class="tablinks" onclick="openCity(event, 'BC')">Basic C++</button>
+                <button class="tablinks" onclick="openCity(event, 'BJ')">Basic Java</button>
+                <button class="tablinks" onclick="openCity(event, 'APCSA')">AP Computer Science A</button>
+                <button class="tablinks" onclick="openCity(event, 'ADS')">Algorithms and Data Structures</button>
+                <button class="tablinks" onclick="openCity(event, 'PC')">Private Classes</button>
+            </div>
+
+            <div id="BP" class="tabcontent">
+                <h3>Beginner Python</h3>
+                <p>This class is meant to teach students the basics of Python. Python is a very popular, useful, and easy language to learn that is very suitable for beginners. It can be utilized to create many things, from games to implementing artificial intelligence and machine learning. If you are not very familiar with Python or have never programmed before, then this course would be perfect for you. In this course, we will learn about syntax, different Python tools, the most prevalent basic data structures, simple algorithmic thinking, and basic problem-solving techniques. A couple examples of what we will learn are the different types of loops, different Python built-in functions, and Object-Oriented programming.</p>
+            </div>
+
+            <div id="AP" class="tabcontent">
+                <h3>Advanced Python</h3>
+                <p>In this class, we will start applying Python in more involved settings. This class will be more project based and a decently strong background and understanding of Python is recommended. Initially, instructors will be leading and lecturing with project development, but soon, students will be completing their own projects with the guidance of instructors.</p> 
+            </div>
+
+            <div id="BC" class="tabcontent">
+                <h3>Basic C++</h3>
+                <p>This class is meant to teach students the basics of C++. C++ is a very popular language for competitive programming and can also be applied to make different things like operating systems, games, and graphical user interfaces (GUIS). Much like the beginner Python class, if you are not very familiar with C++ or have never programmed before, then this course would be perfect for you. In this course, we will learn about syntax, different C++ tools, the most prevalent basic data structures, simple algorithmic thinking, and basic problem-solving techniques.  A couple examples of what we will learn are the different types of loops and different C++ built-in functions.</p>
+            </div>
+
+            <div id="BJ" class="tabcontent">
+                <h3>Basic Java</h3>
+                <p>This class is meant to teach students the basics of Java. Java is also a very popular language for competitive programming and can also be applied mainly for back-end development projects, Android development, etc. Much like the beginner Python class, if you are not very familiar with Java or have never programmed before, then this course would be perfect for you. In this course, we will learn about syntax, different Javatools, the most prevalent basic data structures, simple algorithmic thinking, and basic problem-solving techniques.  A couple examples of what we will learn are the different types of loops and different Java built-in functions.</p>
+            </div>
+
+            <div id="APCSA" class="tabcontent">
+                <h3>AP Computer Science A</h3>
+                <p>This class is an extension of the Basic Java class. It is much more advanced and is designed to prepare students for the AP Computer Science A exam/class that they can take in high school. A decent understanding of Java is recommended for this class. Students will learn about more complex algorithms, techniques, etc. An example of some topics are recursions, implementing the different types of sorts, and Object Oriented programming. Our class will be relatively based on the AP Computer Science A curriculum, in which more information can be found <a href="https://apstudents.collegeboard.org/courses/ap-computer-science-a"  target="_blank">here</a>. </p>
+            </div>
+
+            <div id="ADS" class="tabcontent">
+                <h3>Algorithms and Data Structures</h3>
+                <p>The algorithms and data structures is a course meant to introduce and teach some of the easier and basic algorithms to students. For example, students will learn the Greedy and simulation algorithm, as well as different useful and unique data structures that may be associated with these algorithms. This is meant to begin helping students develop an algorithmic mindset and is also meant to help students pass USACO Bronze or other coding competitions of a similar level. A proficiency with a coding language, particularly Java, C++, or Python is strongly recommended for this class.</p>
+            </div>
+
+            <div id="PC" class="tabcontent">
+                <h3>Private Classes</h3>
+                <p>Private classes are very flexible, negotiable classes that are determined between the instructor and the students. Both the time, frequency, and topic of the classes are determined by the students. Private classes can be chosen to be any class size (for instance, we can arrange one instructor to teach one student or two students or three students etc.), however, a MANDATORY donation of 15 dollars/hour per person is REQUIRED. This donation will go into a Code;Spice bank account that is strictly meant to save money to donate to other worthy causes or support the further growth of the Code;Spice organization to help more students around the world. We greatly appreciate any donations that will help us support our own or other causes!</p>
+            </div>
+        </div>
     </section>
+    <script>
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+        
     <section class="section" id="review">
         <div class="container text-center">
             <h6 class="display-4 has-line">WHAT OUR CUSTOMERS ARE SAYING</h6>

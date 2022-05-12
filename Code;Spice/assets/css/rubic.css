@@ -11566,14 +11566,12 @@ textarea {
 
 .tabs-container .tab-nav .item .link {
   display: block;
-  width: 60px;
-  height: 60px;
   margin: 5px auto;
   border-radius: 0.17rem;
   color: #343a40;
   background-color: #dee2e6;
   text-align: center;
-  line-height: 60px;
+  line-height: 10px;
   font-size: 11px;
   font-weight: 700;
   -webkit-transition: all 0.2s;
@@ -11586,7 +11584,7 @@ textarea {
 }
 
 .tabs-container .tab-nav .item .link.active {
-  background: #ff9a44;
+  background: #ff3860ff;
 }
 
 .tabs-container .tab-content {
@@ -11648,3 +11646,44 @@ img.tower {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+/* Style the tab */
+.tab {
+    width: 1156px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ff3860ff;
+    
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ff3860ff;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    width: 1156px;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
