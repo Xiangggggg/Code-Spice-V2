@@ -11665,7 +11665,6 @@ img.tower {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-    
   }
   
   /* Change background color of buttons on hover */
@@ -11682,8 +11681,70 @@ img.tower {
   /* Style the tab content */
   .tabcontent {
     width: 1156px;
-    display: none;
+    font-size: 30px;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color:  hsl(0, 0%, 21%);
+    color: white;
+    
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #ff3860ff;
+    color: white;
+    transform: rotateY(180deg); 
+ 
+  }
+
+  .flip-card-back p {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    grid-gap: 50px;
   }
