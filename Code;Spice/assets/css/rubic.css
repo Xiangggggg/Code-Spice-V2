@@ -11743,8 +11743,9 @@ img.tower {
   }
 
   .grid-container {
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
     text-align: center;
     grid-gap: 50px;
   }
