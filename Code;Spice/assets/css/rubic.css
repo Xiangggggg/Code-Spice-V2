@@ -11720,9 +11720,10 @@ img.tower {
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
+    padding: 20px;
     background-color:  hsl(0, 0%, 21%);
     color: white;
-    
+    border-radius: 10px;
   }
   
   /* Style the back side */
