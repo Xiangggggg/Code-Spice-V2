@@ -11728,6 +11728,7 @@ img.tower {
   
   /* Style the back side */
   .flip-card-back {
+    border-radius: 10px;
     background-color: #ff3860ff;
     color: white;
     transform: rotateY(180deg); 
