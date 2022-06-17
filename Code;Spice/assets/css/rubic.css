@@ -11842,3 +11842,9 @@ img.tower {
   .btn-light, .btn-outline-light {
     opacity: .8;
   }  
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+  
